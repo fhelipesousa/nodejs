@@ -1,5 +1,5 @@
-var max = 10000;
+var config = require('./config.js');
 
-module.exports.generate = function(){
-	return Math.floor(Math.random() * max);
+exports.generate = function(){
+	return Math.floor(Math.random() * config.max);
 };
